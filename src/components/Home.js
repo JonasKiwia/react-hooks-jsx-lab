@@ -1,9 +1,15 @@
+// src/components/Home.js
 import React from "react";
-import { name, city } from "../data/data.js";
+import { username, city } from "../data/data"; // Import variables
 
 function Home() {
-  // update the JSX being returned!
-  return <div>Home</div>;
+  return (
+    <div id="home">
+      <h1 style={{ color: "firebrick" }}>
+        {username} is a Web Developer from {city}
+      </h1>
+    </div>
+  );
 }
 
 export default Home;
